@@ -9,7 +9,7 @@ import json
 PERPLEXITY_API_KEY = "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"
 API_ENDPOINT = "https://api.perplexity.ai/chat/completions"
 
-def call_perplexity_api(messages, model="sonar-pro"):
+def call_perplexity_api(messages, model="sonar-reasoning"):
     # Strict validation
     if not isinstance(messages, list):
         raise ValueError(f"messages must be a list, got {type(messages)}: {messages}")
